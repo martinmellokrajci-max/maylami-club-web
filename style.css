@@ -1,0 +1,121 @@
+/* Maylami Club: Billiards – the small web (privacy policy). Dark wood, leather and brass like the game's menus.
+   No pictures and no web fonts: nothing else is downloaded, the page opens at once on a phone. */
+:root {
+    --wood-dark: #1a0f08;
+    --wood: #2b1a0e;
+    --wood-light: #3a2413;
+    --leather: #24160d;
+    --brass: #b8893a;
+    --gold: #ffd36b;
+    --text: #f1e3c6;
+    --text-soft: #e5c98f;
+    --link: #7cc4ff;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+    margin: 0;
+    padding: 28px 16px 56px;
+    color: var(--text);
+    font: 18px/1.6 "Baloo 2", "Trebuchet MS", "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: var(--wood-dark);
+    /* wooden boards: long soft grain lines over a dark brown base */
+    background-image:
+        repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.28) 0, rgba(0, 0, 0, 0.28) 2px, transparent 2px, transparent 220px),
+        repeating-linear-gradient(0deg, rgba(255, 200, 130, 0.035) 0, rgba(255, 200, 130, 0.035) 1px, transparent 1px, transparent 7px),
+        linear-gradient(180deg, var(--wood-light), var(--wood) 40%, var(--wood-dark));
+    background-attachment: fixed;
+}
+
+/* the leather board with a brass frame (frame_plaque of the game) */
+.plaque {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px 34px 38px;
+    background: linear-gradient(180deg, #2c1b10, var(--leather));
+    border: 3px solid var(--brass);
+    border-radius: 18px;
+    box-shadow: 0 0 0 6px #120a05, 0 0 0 8px rgba(184, 137, 58, 0.45), 0 18px 50px rgba(0, 0, 0, 0.65),
+        inset 0 0 60px rgba(0, 0, 0, 0.45);
+}
+
+.plaque--small { max-width: 560px; text-align: center; }
+
+.brand {
+    margin: 0;
+    color: var(--brass);
+    font-size: 15px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.switch { margin: 0; float: right; font-size: 17px; letter-spacing: 0.06em; }
+.switch strong { color: var(--gold); }
+
+/* the game's logo above the title (a link to the first page) */
+.logo { display: block; clear: both; margin: 0 auto; width: 246px; max-width: 70%; }
+.logo img { display: block; width: 100%; height: auto; }
+
+h1 {
+    clear: both;
+    margin: 0 0 6px;
+    padding-top: 18px;
+    color: var(--gold);
+    font-size: 34px;
+    line-height: 1.2;
+    text-shadow: 0 2px 0 #000;
+}
+
+h2 {
+    margin: 34px 0 8px;
+    padding-bottom: 6px;
+    color: var(--gold);
+    font-size: 23px;
+    border-bottom: 1px solid rgba(184, 137, 58, 0.55);
+}
+
+p { margin: 10px 0; }
+
+ul { margin: 10px 0; padding-left: 24px; }
+li { margin: 4px 0; }
+li::marker { color: var(--brass); }
+
+strong { color: var(--text-soft); }
+
+code {
+    padding: 1px 6px;
+    font-size: 0.9em;
+    color: var(--text-soft);
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+a { color: var(--link); overflow-wrap: anywhere; }
+a:hover, a:focus { color: var(--gold); }
+
+/* the two wooden buttons of the first page */
+.menu { list-style: none; margin: 26px 0 0; padding: 0; }
+.menu li { margin: 14px 0; }
+.menu a {
+    display: block;
+    padding: 16px 18px;
+    color: var(--text);
+    font-size: 21px;
+    text-decoration: none;
+    background: linear-gradient(180deg, #6a4322, #3f2612);
+    border: 2px solid var(--brass);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 220, 160, 0.25), 0 4px 0 #120a05;
+}
+.menu a:hover, .menu a:focus { color: var(--gold); border-color: var(--gold); }
+
+@media (max-width: 560px) {
+    body { padding: 12px 8px 32px; font-size: 17px; }
+    .plaque { padding: 20px 18px 26px; }
+    h1 { font-size: 27px; }
+    h2 { font-size: 21px; }
+}

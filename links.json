@@ -1,0 +1,12 @@
+{
+  "_comment": "Web links of Settings > Language and Settings > About (docs/TECHNIKA.md 12.5, spec 2B F11). Empty = not yet: the row is hidden (nothing says 'coming soon'). Only https:// links and a plain e-mail address are ever opened. remoteUrl = a copy of this file on GitHub Pages (the public repository maylami-club-web; its source is docs/web/site/links.json, kept identical by a test): the game downloads it at start, keeps it and uses it when its contentVersion is HIGHER than this one, so a link can change without an update (raise contentVersion on the web copy every time you change it). translate empty = the Discord link. bugEmail = the e-mail for 'Nahlasit chybu' (an e-mail with the version and the device is prepared); without it bugReport (a web page), else Discord. privacyPolicy = the English page, privacyPolicySk = the Slovak page (shown when the game is in Slovak). storePage = the game's page on Google Play (Ohodnotit hru), empty until it is published.",
+  "contentVersion": 3,
+  "remoteUrl": "https://martinmellokrajci-max.github.io/maylami-club-web/links.json",
+  "discord": "https://discord.gg/wKW9A6qjVS",
+  "translate": "",
+  "bugEmail": "martinmellokrajci@gmail.com",
+  "bugReport": "",
+  "privacyPolicy": "https://martinmellokrajci-max.github.io/maylami-club-web/privacy/",
+  "privacyPolicySk": "https://martinmellokrajci-max.github.io/maylami-club-web/ochrana-sukromia/",
+  "storePage": ""
+}
